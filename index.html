@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="I'm Harsh, also known as Harsh Visuals, is a talented graphics designer with a passion for creative expression. Currently, he is expanding his skill set by delving into web designing and coding. With a keen eye for aesthetics and a dedication to continuous growth, Harsh aims to create visually stunning designs and dynamic web solutions.">
+  <meta name="keywords" content="Harsh Visuals, Harsh Darji, graphic design portfolio, eSports Graphic Designer, Esports Graphics Showcase, Social Media Graphics, Social Media Posts, creative design showcase, visual communication examples, branding and identity projects, print and digital design work, web design portfolio, UX design samples, typography creations, illustration showcase, motion graphics portfolio, logo design examples, packaging design projects, digital art portfolio, photography gallery, art direction portfolio, responsive design samples, infographics work, social media design projects, vector graphics creations, Adobe Creative Suite expertise, professional graphic designer, design agency projects, freelance designer portfolio, design process examples, client projects showcase, design awards and recognition, color theory expertise, layout design samples, visual storytelling examples, portfolio site for graphic design">
+
+   <meta name="author" content="Harsh Darji">
+    <meta http-equiv="refresh" content="120">
+    <link rel="icon" href="logo.png" type="image/png">
+    
+    <title>Harsh D.</title>
+
+    <style>
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Krona+One&family=Poppins:wght@300;600;700&family=Schibsted+Grotesk:wght@400;700&family=Space+Grotesk:wght@300;600;700&family=Syne:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            width: 100%;
+            height: 100vh;
+            font-family: 'Schibsted Grotesk';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d3d0bd;
+            color: #272525;
+        }
+
+        .preview{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            pointer-events: none;
+            transform-origin: center;
+            z-index: 2;
+        }
+        
+        .preview-img{
+            width: 100%;
+            height: 100%;
+            background: url(portfolio.png);
+            background-size: cover;
+            background-position: 0 0;
+            pointer-events: none;
+        }
+
+        p{
+            font-size: 14px;
+            text-transform: uppercase;
+            line-height: 100%;
+        }
+
+        #col1 p{
+            opacity: 0.5;
+        }
+
+        .container{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .information{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project{
+            width: 100%;
+            padding: 2.5em 1em;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(0,0,0,0.125);
+            cursor: pointer;
+        }
+
+        .project > div{
+            flex: 3;
+        }
+
+        .project div:last-child{
+            flex: 1;
+        }
+
+        @media(max-width:900px){
+            .study,
+            .projects{
+                display: none;
+            }
+        }
+
+        .aboutme{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(0,0,0,0.125);
+            cursor: pointer;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+
+        .info p{
+            font-size: 14px;
+            text-transform: capitalize;
+            padding-bottom: 0.3em;
+        }
+
+        .arrow{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+
+        .icon{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border-radius: 100px;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+
+    </style>
+    
+    </head>
+    <body>
+
+        
+
+        <div class="preview">
+            <div class="preview-img">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="information">
+                <div class="aboutme">
+
+                    <div class="image">
+                        <img src="img.jpg" class="icon" alt="">
+                    </div>
+
+                    <div class="info">
+                        <div class="name">
+                            <p>Harsh Darji</p>
+                        </div>
+                        <div class="service">
+                            <p>Graphics/Web Designer</p>
+                        </div>
+                    </div>
+
+                <!--
+                    <div class="arrow">
+                        <i class="fa-sharp fa-regular fa-arrow-up-right"></i>
+                    </div>
+                -->                
+
+                </div>
+                
+                <div class="project" id="col1">
+                    <div class="name">
+                        <p>STUDENT</p>
+                    </div>
+                    <div class="service">
+                        <p>18Y'old</p>
+                    </div>
+                    <div class="study">
+                        <p>COMPUTER ENG</p>
+                    </div>
+                    <div class="projects">
+                        <p>AHMEDABAD</p>
+                    </div>
+                </div>
+                <div class="project" id="col2">
+                    <div class="name">
+                        <p>Graphics</p>
+                    </div>
+                    <div class="service">
+                        <p>photoshop</p>
+                    </div>
+                    <div class="study">
+                        <p>SOCIAL MEDIA ASSETS</p>
+                    </div>
+                    <div class="projects">
+                        <p>2020 - NOW</p>
+                    </div>
+                </div>
+                <div class="project" id="col3">
+                    <div class="name">
+                        <p>Web/Coding</p>
+                    </div>
+                    <div class="service">
+                        <p>HTML/CSS/JS/PHP
+                        </p>
+                    </div>
+                    <div class="study">
+                        <p>w/ MINOR PROJECTS</p>
+                    </div>
+                    <div class="projects">
+                        <p>2023 - NOW</p>
+                    </div>
+                </div>
+                <div class="project" id="col4">
+                    <div class="name">
+                        <p>FREELANCE</p>
+                    </div>
+                    <div class="service">
+                        <p>SOCIAL MEDIA ASSETS</p>
+                    </div>
+                    <div class="study">
+                        <p>WORKED w/ YOUTUBERS/ORGS</p>
+                    </div>
+                    <div class="projects">
+                        <p>2021 - 2022</p>
+                    </div>
+                </div>
+                <div class="project" id="col5">
+                    <div class="name">
+                        <p>Contact</p>
+                    </div>
+                    <div class="service">
+                        <p><a href="https://instagram.com/i.harshdarji" style="color: rgb(77, 77, 77);" ><i class="fa-brands fa-instagram"></i></a> &nbsp; <a href="https://www.linkedin.com/in/harshdarji26" style="color: rgb(77, 77, 77);"><i class="fa-brands fa-linkedin"></i></a></p>
+                    </div>
+                    <div class="study">
+                        <p>OPEN FOR WORKS</p>
+                    </div>
+                    <div class="projects">
+                        <p>AVAILABLE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="
+        https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js
+        "></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<script src="app.js"></script>
+<script src="https://kit.fontawesome.com/1ee8f271b9.js"></script>
+
+<script>
+    const preview = document.querySelector(".preview");
+    const previewImg = document.querySelector(".preview-img");
+    const projects = document.querySelector(".information");
+
+    let isInside = false;
+
+    const bgPositions = {
+        col1: "0 0",
+        col2: "0 25%",
+        col3: "0 50%",
+        col4: "0 75%",
+        col5: "0 100%",
+    };
+
+    const moveStuff = (e) => {
+        const mouseInside = isMouseInsideContainer(e);
+
+        if(mouseInside !== isInside){
+            isInside = mouseInside;
+            if(isInside){
+                gsap.to(preview, 0.3, {
+                    scale: 1
+                });
+            } else {
+                gsap.to(preview, 0.3, {
+                    scale: 0,
+                });
+            }
+        }
+    };
+
+
+    const moveProject = (e) => {
+        const previewRect = preview.getBoundingClientRect();
+        const offsetX = previewRect.width / 2;
+        const offsetY = previewRect.height / 2;
+
+        preview.style.left = e.pageX - offsetX + "px";
+        preview.style.top = e.pageY - offsetY + "px";
+        
+    };
+
+    const moveProjectImg = (project) => {
+        const projectId = project.id;
+        gsap.to(previewImg, 0.4, {
+            backgroundPosition: bgPositions[projectId] || "0 0",
+        });
+    };
+
+    const isMouseInsideContainer = (e) => {
+        const containerRect = projects.getBoundingClientRect();
+        return(
+            e.pageX >= containerRect.left &&
+            e.pageX <= containerRect.right &&
+            e.pageY >= containerRect.top &&
+            e.pageY <= containerRect.bottom
+        );
+    };
+
+    window.addEventListener("mousemove", moveStuff);
+
+    Array.from(projects.children).forEach((project) => {
+        project.addEventListener("mousemove", moveProject);
+        project.addEventListener("mousemove", moveProjectImg.bind(null, project));
+    });
+
+</script>
+
+    </body>
+    </html>
