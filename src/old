@@ -1,0 +1,152 @@
+import { useState } from 'react'
+import { Github, Linkedin, Mail, Twitter } from './assets/index'
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+    <section class="min-h-screen bg-zinc-900 text-white">
+  <main class="mx-auto flex w-11/12 flex-col gap-6 py-[5vh] text-sm md:w-10/12 xl:w-[45%]">
+    <div class="flex flex-col gap-3" style={{ filter: "blur(0px)" }}>
+      <div class="my-1 flex flex-col items-center justify-start gap-6 md:flex-row">
+        <div class="flex w-full flex-wrap items-center justify-center gap-6 md:justify-start">
+          <div class="flex items-center gap-2">
+            <h1 class="text-2xl font-semibold">Ram Goel</h1>
+          </div>
+          <div class="flex flex-1 items-center justify-end gap-6">
+
+            <a data-tooltip-id="hover-tooltip" data-tooltip-content="LinkedIn" class="flex items-center gap-2 transition-all hover:scale-110" href="https://www.linkedin.com/in/ramgoel/">
+            <Linkedin />
+            </a>
+
+            <a data-tooltip-id="hover-tooltip" data-tooltip-content="Github" class="flex items-center gap-2 transition-all hover:scale-110" href="https://github.com/RamGoel">
+            <Github />
+              </a>
+
+              <a data-tooltip-id="hover-tooltip" data-tooltip-content="Twitter" class="flex items-center gap-2 transition-all hover:scale-110" href="https://twitter.com/theramgoel">
+            <Twitter />
+            </a>
+
+            <div class="md:hidden">
+              <a data-tooltip-id="hover-tooltip" data-tooltip-content="Email" class="flex items-center gap-2 transition-all hover:scale-110" href="mailto:rgoel766@gmail.com"
+                >
+
+                </a>
+            </div>
+            <a class="hidden text-neutral-500 hover:text-white md:inline-flex" href="mailto:rgoel766@gmail.com">rgoel766@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2">
+        <ul class="ml-4 flex list-disc flex-col gap-2">
+          <li class="text-neutral-500">
+            full-stack engineer based in
+            <a class="undefined inline-flex items-center gap-1 border-b border-dashed border-neutral-800 text-neutral-300 transition-all hover:text-yellow-200" href="https://en.wikipedia.org/wiki/Amroha">India</a>
+          </li>
+          <li class="text-neutral-500">
+            Worked with few startups,
+            <a class="inline-flex items-center gap-1 border-b border-dashed border-neutral-800 pb-[2px] text-neutral-300 transition-all hover:text-yellow-200" href="https://www.linkedin.com/in/ramgoel/details/experience/">learn more</a>
+          </li>
+          <li class="text-neutral-500">Currently exploring GenAI, and Web performance</li>
+          <li class="text-neutral-500">
+            I'm open for full-stack roles,
+            <a class="inline-flex items-center gap-1 border-b border-dashed border-neutral-800 pb-[2px] text-neutral-300 transition-all hover:text-yellow-200" href="https://cal.com/ram-goel/15min">book a call</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col gap-3" style={{ filter: "blur(0px)" }}>
+      <ol class="flex list-decimal flex-col gap-3">
+        <div class="mb-1 flex items-center gap-2"><button class="w-fit rounded-full border border-neutral-800 bg-neutral-800/40 px-3 py-1 text-xs">web apps</button><button class="w-fit rounded-full border border-neutral-800 bg-neutral-800/40 px-3 py-1 text-xs opacity-50">plugins</button><button class="w-fit rounded-full border border-neutral-800 bg-neutral-800/40 px-3 py-1 text-xs opacity-50">fun</button></div>
+        <li class="flex w-full flex-col items-center gap-2">
+            <div className='w-full flex px-3 flex-col md:flex-row'>
+                <div class="hidden flex-1 items-center gap-2 md:flex">
+                    <a class="undefined inline-flex items-center gap-1 border-b border-dashed border-neutral-800 text-neutral-300 transition-all hover:text-yellow-200" href="https://noterr.ramgoel.com/">Noterr</a>
+                    <p class="text-left text-neutral-500">- save &amp; organize your bookmarks like a pro</p>
+                </div>
+                <div class="flex w-full items-center gap-2 md:hidden">
+                    <p class="">1.</p>
+                    <a class="underline transition-all hover:text-yellow-200" href="https://noterr.ramgoel.com/">Noterr</a> <span>(50 users)</span>
+                </div>
+                <p class="block w-full text-left text-neutral-500 md:hidden">save &amp; organize your bookmarks like a pro</p>
+                <div class="hidden w-fit items-center gap-2 md:flex">
+                    <p class="ml-auto text-right text-neutral-500">50 users</p>
+                    <div data-tooltip-id="hover-tooltip" data-tooltip-content="Actively working on it" class="h-2 w-2 animate-pulse rounded-full bg-green-500"></div>
+                </div>
+            </div>
+            <div className='w-full backface-visible perspective-distant perspective-origin-bottom origin-bottom-right hover:perspective-origin-bottom-left hover:rotate-1 transition duration-300 ease-initial'>
+                <img className='w-full h-52 object-cover rounded-xl' src="https://i.pinimg.com/originals/5b/b8/5d/5bb85de451178cf421d5011392ce7109.gif" alt="" />
+            </div>
+        </li>
+        <li class="flex w-full flex-col items-center gap-2 md:flex-row">
+          <div class="hidden flex-1 items-center gap-2 md:flex">
+            <a class="undefined inline-flex items-center gap-1 border-b border-dashed border-neutral-800 text-neutral-300 transition-all hover:text-yellow-200" href="https://updatly.ramgoel.com/">Updatly</a>
+            <p class="text-left text-neutral-500">- ready to use changelog for your SaaS</p>
+          </div>
+          <div class="flex w-full items-center gap-2 md:hidden">
+            <p class="">2.</p>
+            <a class="underline transition-all hover:text-yellow-200" href="https://updatly.ramgoel.com/">Updatly</a> <span>(35 users)</span>
+          </div>
+          <p class="block w-full text-left text-neutral-500 md:hidden">ready to use changelog for your SaaS</p>
+          <div class="hidden w-fit items-center gap-2 md:flex">
+            <p class="ml-auto text-right text-neutral-500">35 users</p>
+            <div data-tooltip-id="hover-tooltip" data-tooltip-content="Actively working on it" class="h-2 w-2 animate-pulse rounded-full bg-green-500"></div>
+          </div>
+        </li>
+        <li class="flex w-full flex-col items-center gap-2 md:flex-row">
+          <div class="hidden flex-1 items-center gap-2 md:flex">
+            <a class="undefined inline-flex items-center gap-1 border-b border-dashed border-neutral-800 text-neutral-300 transition-all hover:text-yellow-200" href="https://lemma-ui.vercel.app/">LemmaUI</a>
+            <p class="text-left text-neutral-500">- Generate Code using Prompt/JSON using AI</p>
+          </div>
+          <div class="flex w-full items-center gap-2 md:hidden">
+            <p class="">3.</p>
+            <a class="underline transition-all hover:text-yellow-200" href="https://lemma-ui.vercel.app/">LemmaUI</a> <span>(20 users)</span>
+          </div>
+          <p class="block w-full text-left text-neutral-500 md:hidden">Generate Code using Prompt/JSON using AI</p>
+          <div class="hidden w-fit items-center gap-2 md:flex">
+            <p class="ml-auto text-right text-neutral-500">20 users</p>
+          </div>
+        </li>
+        <li class="flex w-full flex-col items-center gap-2 md:flex-row">
+          <div class="hidden flex-1 items-center gap-2 md:flex">
+            <a class="undefined inline-flex items-center gap-1 border-b border-dashed border-neutral-800 text-neutral-300 transition-all hover:text-yellow-200" href="https://dumbel.vercel.app/">Dumbel</a>
+            <p class="text-left text-neutral-500">- match with developers, connect with people, etc</p>
+          </div>
+          <div class="flex w-full items-center gap-2 md:hidden">
+            <p class="">4.</p>
+            <a class="underline transition-all hover:text-yellow-200" href="https://dumbel.vercel.app/">Dumbel</a> <span>(100 users)</span>
+          </div>
+          <p class="block w-full text-left text-neutral-500 md:hidden">match with developers, connect with people, etc</p>
+          <div class="hidden w-fit items-center gap-2 md:flex">
+            <p class="ml-auto text-right text-neutral-500">100 users</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <div class="flex flex-col gap-3" style={{ filter: "blur(0px)" }}>
+      <div class="flex flex-col gap-2">
+        <h3 class="text-lg font-semibold">Writings</h3>
+        <div class="flex flex-col justify-between gap-2 md:flex-row md:items-center">
+          <a class="undefined inline-flex items-center gap-1 border-b border-dashed border-neutral-800 text-neutral-300 transition-all hover:text-yellow-200" href="/blog/journey-of-noterr">The Journey of Building Noterr</a>
+          <p class="text-neutral-500">30 Jan, 2025</p>
+        </div>
+        <div class="flex flex-col justify-between gap-2 md:flex-row md:items-center">
+          <a class="undefined inline-flex items-center gap-1 border-b border-dashed border-neutral-800 text-neutral-300 transition-all hover:text-yellow-200" href="/blog/react-native-theme">Light and Dark Mode in React&nbsp;Native</a>
+          <p class="text-neutral-500">29 Dec, 2024</p>
+        </div>
+        <div class="flex flex-col justify-between gap-2 md:flex-row md:items-center">
+          <a class="undefined inline-flex items-center gap-1 border-b border-dashed border-neutral-800 text-neutral-300 transition-all hover:text-yellow-200" href="/blog/automate-linkedin">Script to accept all invites on Linkedin</a>
+          <p class="text-neutral-500">24 Dec, 2024</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-3" style={{ filter: "blur(0px)" }}></div>
+  </main>
+</section>
+    </>
+  )
+}
+
+export default App
