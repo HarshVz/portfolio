@@ -19,7 +19,7 @@ const Nav = ({classList}) => {
     onMouseLeave={() => handleMouseLeave()}
     >
         <div
-        className="flex flex-row items-center justify-center gap-2 text-xl transition duration-300 ease-in "
+        className="flex flex-row items-center justify-center gap-2 text-xl transition duration-300 ease-in transition-discrete cursor-alias"
         >
             <div className="flex h-5 w-5 items-center justify-center rounded-full bg-green-900">
                 <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse"></div>

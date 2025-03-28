@@ -54,7 +54,7 @@ const Modal = ({isOpen, closeModal, selectedProject}) => {
               </h1>
                           <button className='px-5 py-2 bg-neutral-900 rounded-lg border-2 border-neutral-800 cursor-pointer hover:bg-neutral-800 transition duration-300 ease-in-out hover:rotate-2 hover:scale-95 hidden md:block'
             onClick={() => closeModal()}
-            >Go Back 🡤</button>
+            >Go Back <i class="ri-arrow-left-up-line"></i></button>
         </div>
               <div className="flex space-x-2">
                 <span
@@ -97,14 +97,14 @@ const Modal = ({isOpen, closeModal, selectedProject}) => {
                   rel="noopener noreferrer"
                   className="text-neutral-300 hover:text-neutral-100 underline transition duration-300 hover:scale-95"
                 >
-                  Visit Site 🡥
+                  Visit Site <i class="ri-arrow-right-up-line"></i>
                 </a>
               </div>
             )}
 
-<button className='space-x-2 bg-neutral-900 border-2 border-neutral-800 p-3 rounded-md text-center duration-300 ease-in-out hover:rotate-2 hover:scale-95 block md:hidden cursor-pointer'
+<button className='space-x-2 bg-neutral-900 border-2 border-neutral-800 p-3 rounded-md text-center duration-300 ease-in-out hover:scale-95 block md:hidden cursor-pointer'
             onClick={() => closeModal()}
-            >Go Back 🡤</button>
+            >Go Back <i class="ri-arrow-left-up-line"></i></button>
           </div>
         </div>
 

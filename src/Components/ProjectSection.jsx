@@ -12,7 +12,7 @@ const ProjectSection = ({ classList2, isOpen, openModal }) => {
     const getProjects = async () => {
         const response = await axios.get(`https://script.google.com/macros/s/AKfycby1m-r4yOZW8fHsJ1ThQgkbLAvourd_NN0fUtP9_bvE_2H4Hwn0q5NZQCwwhGH5IMnO/exec`);
         if (response.status === 200) {
-            console.log(response.data);
+            // console.log(response.data);
             setProjectInfo(response.data);
             localStorage.setItem('projects', JSON.stringify(response.data));
         }

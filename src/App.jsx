@@ -53,7 +53,9 @@ const App = () => {
             selectedProject = {project}
         />
         <Nav classList={classList}/>
+        <div className='w-full min-w-full h-3 md:h-1'></div>
         <AboutSection classList={classList}/>
+        <div className='w-full min-w-full h-4 md:h-3'></div>
         <ProjectSection classList2={classList2} isOpen={isOpen}
             openModal= {openModal}/>
         <Skills classList2={classList2}/>
