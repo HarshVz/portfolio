@@ -1,0 +1,19 @@
+import React from 'react'
+
+const Modal = ({isOpen, closeModal}) => {
+
+    console.log(isOpen)
+
+  return (
+    <div className={`${isOpen ? '' : 'translate-y-full' } w-full min-h-screen h-full fixed left-0 top-0 bg-neutral-950 flex justify-center items-center z-50 transition duration-300 ease-in-out`} style={{
+        zIndex: 1000
+    }}>
+        Model
+        <button
+        onClick={() => closeModal()}
+        >Close</button>
+    </div>
+  )
+}
+
+export default Modal

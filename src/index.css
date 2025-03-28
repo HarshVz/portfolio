@@ -53,3 +53,10 @@ body {
 #projects::-webkit-scrollbar{
     display: none !important;
 }
+
+#projectsImageContainer::-webkit-scrollbar{
+    width: 0px;
+}
+#projectsImageContainer::-webkit-scrollbar {
+    height: 3px;  /* Sets the height of the horizontal scrollbar */
+  }
